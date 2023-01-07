@@ -306,8 +306,6 @@
   margin-bottom: 2rem;
 }
 
-
-
 //////////////////////////////////////////////
 // LIST
 .list {
@@ -345,6 +343,33 @@
   }
 }
 
-
 //////////////////////////////////////////////
 // RECOMMEND
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  align-items: center;
+
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__friends {
+
+  }
+
+  &__photo {
+    box-sizing: content-box;    //Return to the default so photos don't shrink when we apply boder because we applied box-sizing:border-box
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+    &:not(:last-child){
+      margin-right: -1.5rem;
+    }
+  }
+}
